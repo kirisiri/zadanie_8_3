@@ -1,11 +1,12 @@
 {
-  "name": "learning-git-3",
+  "name": "zadanie_8_3",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:html",
+    "test": "npm run test:html && npm run test:js",
     "test:html": "nu-html-checker *.html",
+    "test:js": "jshint js/*.js" ,
     "init-project": "npm run init:dirs && npm run init:files && npm run init:gitignore && npm run init:npm-install",
     "init:dirs": "mkdir -p sass css vendor images js",
     "init:files": "touch README.md index.html sass/style.scss js/script.js",
@@ -23,18 +24,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kirisiri/learning-git-3.git"
+    "url": "git+https://github.com/kirisiri/zadanie_8_3"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kirisiri/learning-git-3/issues"
+    "url": "https://github.com/kirisiri/zadanie_8_3/issues"
+ 
   },
-  "homepage": "https://github.com/kirisiri/learning-git-3#readme",
+  "homepage": "https://github.com/kirisiri/zadanie_8_3#readme",
   "dependencies": {
     "autoprefixer-cli": "^1.0.0",
     "browser-sync": "^2.22.0",
+    "jshint": "^2.9.5",
     "node-sass": "^4.7.2",
     "nu-html-checker": "^0.1.0",
     "onchange": "^3.3.0",
